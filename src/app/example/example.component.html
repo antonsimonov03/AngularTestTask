@@ -1,0 +1,16 @@
+<table class="table">
+  <tr class="table__row">
+    <th class="table__header">#</th>
+    <th class="table__header">First name</th>
+    <th class="table__header">Last name</th>
+    <th class="table__header">City</th>
+    <th class="table__header">Country</th>
+  </tr>
+  <tr class="table__row" *ngFor="let person of people; let i = index">
+    <td class="table__cell table__cell--index">{{i+1}}</td>
+    <td class="table__cell">{{person.firstName}}</td>
+    <td class="table__cell">{{person.lastName}}</td>
+    <td class="table__cell">{{person.city}}</td>
+    <td class="table__cell">{{person.country}}</td>
+  </tr>
+</table>
